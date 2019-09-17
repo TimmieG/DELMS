@@ -78,6 +78,7 @@ function checkInputText(value, msg) {
     }
     return false;
 } 
+
 function addNewRequestToPage(newRequestItem) {
     var ul = document.getElementById("newRequest");
     var li = document.createElement("li");
@@ -86,6 +87,7 @@ function addNewRequestToPage(newRequestItem) {
     ul.appendChild(li);
     document.forms[0].reset();
 }        
+
 function savenewRequestData() {
     var newRequestJSON = JSON.stringify(newRequest);
     var request = new XMLHttpRequest();
