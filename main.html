@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile | Dashboard</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="http://cdn.ckeditor.com/4.6.1/standard/ckeditor.js"></script>
+  </head>
+  <body>
+    
+      <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">DELMS</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="main.html">Dashboard</a></li>
+                  <li><a href="Approverequest.html">Approve Requests</a></li>
+                  <li><a href="allrequests.html">Update requests</a></li>
+                  <li><a href="users.html">Delete Request</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Welcome, Timileyin</a></li>
+                  <li><a href="login.html">Logout</a></li>
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+          </nav>
+
+          <header id="header">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-10">
+                    <h1><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard <small>Manage Requests</small></h1>
+                  </div>
+                  <div class="col-md-2">
+                    <div class="dropdown create">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Manage Requests
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a type="button" data-toggle="modal" data-target="#Approve Requests">Approve Requests</a></li>
+                        <li><a href="#">Update Requests</a></li>
+                        <li><a href="#">Delete Request</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </header>
+        
+    <section id="breadcrumb">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li class="active">Dashboard</li>
+          </ol>
+        </div>
+      </section>
+  
+      <section id="main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="list-group">
+                <a href="index.html" class="list-group-item active main-color-bg">
+                  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dashboard
+                </a>
+                <a href="pending.html" class="list-group-item"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Pending Requests <span class="badge">2</span></a>
+                <a href="allreqs.html" class="list-group-item"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> All Requests <span class="badge">10</span></a>
+                <a href="Employee.html" class="list-group-item"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Employees <span class="badge">15</span></a>
+              </div>
+  
+              <div class="well">
+                <h4>All Requests</h4>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                        80%
+                </div>
+              </div>
+              <h4>Pending Requests</h4>
+              <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                      20%
+              </div>
+            </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <!-- Website Overview -->
+              <div class="panel panel-default">
+                <div class="panel-heading main-color-bg">
+                  <h3 class="panel-title">Overview</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="col-md-3">
+                    <div class="well dash-box">
+                      <h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 15</h2>
+                      <h4>Employees</h4>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="well dash-box">
+                      <h2><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> 10</h2>
+                      <h4>Total Requests</h4>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="well dash-box">
+                      <h2><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> 8</h2>
+                      <h4>Total Responses </h4>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="well dash-box">
+                      <h2><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 2</h2>
+                      <h4>Total Pending </h4>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+              <!-- Latest Users -->
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Most Recent Requests</h3>
+                  </div>
+                  <div class="panel-body">
+                    <table class="table table-striped table-hover">
+                        <tr>
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Joined</th>
+                        </tr>
+                        <tr>
+                          <td>KC Okpara</td>
+                          <td>kcokpara@gmail.com</td>
+                          <td>Dec 12, 2018</td>
+                        </tr>
+                        <tr>
+                          <td>Ella Nwaji</td>
+                          <td>enwaji@yahoo.com</td>
+                          <td>Jan 13, 2019</td>
+                        </tr>
+                        <tr>
+                          <td>Timileyin Oyedele</td>
+                          <td>toyedele@gmail.com</td>
+                          <td>Feb 13, 2019</td>
+                        </tr>
+                        <tr>
+                          <td>Stephanie Smith</td>
+                          <td>ssmith@yahoo.com</td>
+                          <td>Jul 14, 2019</td>
+                        </tr>
+                        <tr>
+                          <td>Mike Johnson</td>
+                          <td>mjohnson@gmail.com</td>
+                          <td>Dec 15, 2018</td>
+                        </tr>
+                      </table>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  </body>
+</html>
