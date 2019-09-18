@@ -10,32 +10,31 @@ signInButton.addEventListener('click', () => {
 	container.classList.remove("right-panel-active");
 });
 
-function Validate(){
-	var userName = $("#name").val();
-	var pass = $("#password").val();
+$(document).ready(function(){
+	$("#signUpBtn").on('click', function(e){
+		e.preventDefault();
 
-	if (userName == ''){
-		$('.nameErr').html( + " " +"Enter username");
-	
-	}
-	else if(userName.length < 6){
-		$(".nameErr").html("Name must contain atleast 6 letters");
-	}
-	else if (userName){
-		$(".nameErr").html("");
-	}
-	if (pass == ""){
-		$('.passErr').html("Enter password");
-	
-	}
-	else if(pass.length < 8){
-		$(".passErr").html("Password must have atleast 8 letters including numbers and special characters");
-	}
-	else if (pass){
-		$(".passErr").html("");
-	}
-}
+		var arr = [];
+		var url = 'http://localhost:3000/employees';
+		 var userDetails = {
+			 name: $('input#userName').val(),
+			 email: $('input#userEmail').val(),
+			 password: $('input#userPassword').val()
 
-// function getInfo(){
-// 	// var username = 
-// }
+		 };
+		 $getJSON(url, function(data){
+			 $.each(data, function(i, employees){
+				 arr.push(employees.userEmail);
+			 })
+			 for(var i = 0; i < arr.length; i++){
+
+				 if(arr[i] == userEmail){
+					 return window.location.href = 'DLMS/login.html';
+				 }
+				}
+				return alert("User is registered! Please sign in.");
+			 
+		 })
+	})
+
+})

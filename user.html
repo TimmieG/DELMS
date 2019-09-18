@@ -25,14 +25,14 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                  <li class="active"><a href="main.html">Dashboard</a></li>
+                  <li class="active"><a href="user.html">Dashboard</a></li>
                   <li><a href="Approverequest.html">Add Requests</a></li>
                   <li><a href="allrequests.html">View All Requests</a></li>
                   <li><a href="del.html">Delete Request</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#">Welcome, Timileyin</a></li>
-                  <li><a href="index.html">Logout</a></li>
+                  <li><a href="login.html">Logout</a></li>
                 </ul>
               </div><!--/.nav-collapse -->
             </div>
@@ -52,6 +52,7 @@
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li><a type="button" data-toggle="modal" data-target="#addRequest">Add Request</a></li>
+                        <li><a type="button" data-toggle="modal" data-target="#approveRequest">Approve Request</a></li>
                         <li><a href="#">Update Requests</a></li>
                         <li><a href="#">Delete Request</a></li>
                       </ul>
@@ -130,6 +131,117 @@
                   </div>
                 </div>
                 </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h3 class="panel-title">Most Recent Requests</h3>
+                    </div>
+                    <div class="panel-body">
+                      <table class="table table-striped table-hover">
+                          <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Joined</th>
+                            <th>Manage Requests</th>
+                          </tr>
+                          <tr>
+                            <td>KC Okpara</td>
+                            <td>kcokpara@gmail.com</td>
+                            <td>Dec 12, 2018</td>
+                            <td><div class="col-md-2">
+                                <div class="dropdown create">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Manage Requests
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a type="button" data-toggle="modal" data-target="#addRequest">Add Request</a></li>
+                                    <li><a type="button" data-toggle="modal" data-target="#approveRequest">Approve Request</a></li>
+                                    <li><a href="#">Update Requests</a></li>
+                                    <li><a href="#">Delete Request</a></li>
+                                  </ul>
+                                </div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td>Ella Nwaji</td>
+                            <td>enwaji@yahoo.com</td>
+                            <td>Jan 13, 2019</td>
+                            <td><div class="col-md-2">
+                                <div class="dropdown create">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Manage Requests
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <!-- <li><a type="button" data-toggle="modal" data-target="#addRequest">Add Request</a></li> -->
+                                    <li><a type="button" data-toggle="modal" data-target="#approveRequest">Approve Request</a></li>
+                                    <li><a href="#">Update Requests</a></li>
+                                    <li><a href="#">Delete Request</a></li>
+                                  </ul>
+                                </div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td>Timileyin Oyedele</td>
+                            <td>toyedele@gmail.com</td>
+                            <td>Feb 13, 2019</td>
+                            <td><div class="col-md-2">
+                                <div class="dropdown create">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Manage Requests
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <!-- <li><a type="button" data-toggle="modal" data-target="#addRequest">Add Request</a></li> -->
+                                    <li><a type="button" data-toggle="modal" data-target="#approveRequest">Approve Request</a></li>
+                                    <li><a href="#">Update Requests</a></li>
+                                    <li><a href="#">Delete Request</a></li>
+                                  </ul>
+                                </div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td>Stephanie Smith</td>
+                            <td>ssmith@yahoo.com</td>
+                            <td>Jul 14, 2019</td>
+                            <td><div class="col-md-2">
+                                <div class="dropdown create">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Manage Requests
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <!-- <li><a type="button" data-toggle="modal" data-target="#addRequest">Add Request</a></li> -->
+                                    <li><a type="button" data-toggle="modal" data-target="#approveRequest">Approve Request</a></li>
+                                    <li><a href="#">Update Requests</a></li>
+                                    <li><a href="#">Delete Request</a></li>
+                                  </ul>
+                                </div>
+                              </div></td>
+                          </tr>
+                          <tr>
+                            <td>Mike Johnson</td>
+                            <td>mjohnson@gmail.com</td>
+                            <td>Dec 15, 2018</td>
+                            <td><div class="col-md-2">
+                                <div class="dropdown create">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Manage Requests
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <!-- <li><a type="button" data-toggle="modal" data-target="#addRequest">Add Request</a></li> -->
+                                    <li><a type="button" data-toggle="modal" data-target="#approveRequest">Approve Request</a></li>
+                                    <li><a href="#">Update Requests</a></li>
+                                    <li><a href="#">Delete Request</a></li>
+                                  </ul>
+                                </div>
+                              </div></td>
+                          </tr>
+                        </table>
+                    </div>
+                  </div>
+              </div>
 
               
             </div>
@@ -149,10 +261,10 @@
               <form>
             <div class="modal-header">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Add Request</h4>
+              <h4 class="modal-title" id="addRequest">Add Request</h4>
             </div>
             <div class="modal-body">
-            <form class="text-center border border-light p-5" action="submit">    
+            <form class="addRequest" action="submit">    
                     <label>
                         Name<input type="text" id="name" class="form-control mb-4" placeholder="Name">
                     </label>
@@ -183,20 +295,14 @@
     
         <!-- Message -->
         <div class="form-group">
-            <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+            <textarea class="form-control rounded-0" id="additionalinfo" rows="3" placeholder="Message"></textarea>
         </div>
-    
-        <!-- Copy -->
-        <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
-            <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
-        </div>
-    
+
         <!-- Send button -->
         <!-- Default form contact -->
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" id = "submit-butn">Save changes</button>
+              <button type="button" class="btn btn-primary" id = "submit-butn">Submit</button>
             </div>
             </form>
           </div>
@@ -206,5 +312,6 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/mustache.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>  </body>
 </html>
