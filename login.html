@@ -29,10 +29,13 @@
                 </div>
                 <div class="form-container sign-in-container">
                     <!-- Sign In form code goes here -->
-                    <form action="Admin.html">
+                    <form name = "signIn" action = "Admin.html" onsubmit="Validate()">
                         <h1>Sign in</h1>
-                        <input type="email" placeholder="Email" />
-                        <input type="password" placeholder="Password" />
+                        <input type="email" placeholder="Email" id = "email" class="form-control"/>
+                        <input type="name" placeholder="Username" id = "name" class="form-control"/>
+                        <p class = "nameErr"></p>
+                        <input type="password" placeholder="Password" id = "password" class="form-control"/>
+                        <p class = "passErr"></p>
                         <a href="#">Forgot your password?</a>
                         <button>Sign In</button>
                     </form>
