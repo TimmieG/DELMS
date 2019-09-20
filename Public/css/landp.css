@@ -9,6 +9,9 @@
     font-size:17px;
     color:#32CD32;
     line-height:1.6;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    
   }
   
   #showcase{
@@ -22,6 +25,7 @@
     align-items:center;
     text-align:center;
     padding:0 20px;
+
   }
   
   #showcase h1{

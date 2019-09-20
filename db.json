@@ -1,28 +1,56 @@
 {
-    "employees": [
-      {
-        "id": 1,
-        "name": "Sebastian Eschweiler",
-        "email": "sebastian@codingthesmartway.com",
-        "password": "sebEsch"
-      },
-      {
-        "id": 2,
-        "name": "Steve Palmer",
-        "email": "steve@codingthesmartway.com",
-        "password": "Stepa"
-      },
-      {
-        "id": 3,
-        "name": "Smith Ann",
-        "email": "ann@codingthesmartway.com",
-        "password": "smann"
-      },
-      {
-        "id": 4,
-        "name": "Lucy Ballmer",
-        "email": "lucyb56@gmail.com",
-        "password": "Balu"
-      }
-    ]
-  }
+  "employees": [
+    {
+      "id": 1,
+      "name": "Sebastian Eschweiler",
+      "email": "sebastian@codingthesmartway.com",
+      "password": "sebEsch"
+    },
+    {
+      "id": 2,
+      "name": "Steve Palmer",
+      "email": "steve@codingthesmartway.com",
+      "password": "Stepa"
+    },
+    {
+      "id": 3,
+      "name": "Smith Ann",
+      "email": "ann@codingthesmartway.com",
+      "password": "smann"
+    },
+    {
+      "id": 4,
+      "name": "Lucy Ballmer",
+      "email": "lucyb56@gmail.com",
+      "password": "Balu"
+    },
+    {
+      "name": "edsz",
+      "email": "timmieghurl@gmail.com",
+      "password": "esadxz",
+      "id": 5
+    },
+    {
+      "name": "Timileyin Oyedele",
+      "email": "timmieghurl@gmail.com",
+      "password": "Timmie@95",
+      "id": 6
+    },
+    {
+      "name": "steve palmer",
+      "email": "timmieghurl@gmail.com",
+      "password": "saegf",
+      "id": 7
+    }
+  ],
+  "requests": [
+    {
+      "Name": "Lucy Ballmer",
+      "Email": "lucyb56@gmail.com",
+      "StaffId":"001",
+      "StartDate": "Dec 12, 2018",
+      "Duration": "9 days",
+      "Status": "Approved"
+    }
+  ]
+}

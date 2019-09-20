@@ -16,24 +16,24 @@
     </head>
         <body>  
             <div class="container" id="container">
-                <div class="form-container sign-up-container">
+                <div class="form-container sign-up-container signUpBtn">
                     <!-- Sign Up form code goes here -->
-                    <form id="form_id" method="post" name="signUp">
+                    <form id="form_up" name="signUp" method="POST">
                         <h1>Create Account</h1>
                         <input type="text" placeholder="Name" id = "userName"/>
                         <input type="email" placeholder="Email" id = "userEmail" />
                         <input type="password" placeholder="Password" id = "userPassword"/>
-                        <button id = "signUpBtn">Sign Up</button>
+                        <button class="signUpBtn">Register</button>
                     </form>
                 </div>
                 <div class="form-container sign-in-container">
                     <!-- Sign In form code goes here -->
-                    <form id="form_id" method="post" name="signIn" onsubmit="validate()">
-                        <h1>Sign in</h1>
+                    <form id="form_in" name="signIn" method="GET" action="user.html">
+                        <h1>Sign In</h1>
                         <input type="email" placeholder="Email" id = "email" class="form-control"/>
                         <input type="password" placeholder="Password" id = "password" class="form-control"/>
                         <a href="#">Forgot your password?</a>
-                        <button>Sign In</button>
+                        <button class="signInBtn">Sign In</button>
                     </form>
                 </div>
                 <div class="overlay-container">
@@ -54,6 +54,9 @@
                     </div>
                 </div>
             </div>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="js/login.js"></script>
     </body>
 </head>
